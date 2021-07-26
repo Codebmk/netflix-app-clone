@@ -17,15 +17,15 @@ for (let i = 0; i <= Math.floor(moviesList.length / 2); i++){
     const movieItemDiv = document.createElement("div");
     movieItemDiv.className = "movie-list-item";
     movieItemDiv.innerHTML = `
-        <img src="${moviesList[i].img}" alt="${moviesList[i].title}" class="movie-img"/>
+        <img src="../assets/${moviesList[i].img}" alt="${moviesList[i].title}" class="movie-img"/>
         <div class="movie-info">
             <h3 class="movie-title">${moviesList[i].title}</h3>
             <div class="movie-rating">
                 <h3 class="movie-release-year">2018</h3>
                 <div class="movie-other-info">
-                    <span class="material-icons-outlined">favorite</span>
-                    <span class="material-icons-outlined">visibility</span>
-                    <span class="material-icons-outlined">star</span>
+                    <ion-icon name="heart"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="eye"></ion-icon>
                 </div>
             </div>
         </div>
@@ -38,18 +38,22 @@ for (let i = moviesList.length-1; i > Math.floor(moviesList.length / 2); i--){
     const movieItemDiv = document.createElement("div");
     movieItemDiv.className = "movie-list-item";
     movieItemDiv.innerHTML = `
-        <img src="${moviesList[i].img}" alt="${moviesList[i].title}" class="movie-img"/>
+        <img src="assets/${moviesList[i].img}" alt="${moviesList[i].title}" class="movie-img"/>
         <div class="movie-info">
             <h3 class="movie-title">${moviesList[i].title}</h3>
             <div class="movie-rating">
                 <h3 class="movie-release-year">2018</h3>
                 <div class="movie-other-info">
-                    <span class="material-icons-outlined">favorite</span>
-                    <span class="material-icons-outlined">visibility</span>
-                    <span class="material-icons-outlined">star</span>
+                    <ion-icon name="heart"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="eye"></ion-icon>
                 </div>
             </div>
         </div>
     `;
     moviesListDiv2.appendChild(movieItemDiv);
 }
+
+document.querySelector("#nav-menu").addEventListener("click", () => {
+    document.querySelector("#nav-links").classList.toggle("nav-link-toggle-show");
+})
