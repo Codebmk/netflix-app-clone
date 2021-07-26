@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netflix</title>
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
 </head>
 <body>
     <div id="wrapper">
@@ -15,14 +13,19 @@
             <div id="nav-brand">
                 <h3 id="title">NETFLIX</h3>
             </div>
+            <div id="nav-menu">
+                <div class="bar" id="bar1"></div>
+                <div class="bar" id="bar2"></div>
+                <div class="bar" id="bar3"></div>
+            </div>
             <ul id="nav-links">
                 <li class="nav-link">Home</li>
                 <li class="nav-link">Movies</li>
                 <li class="nav-link">Series</li>
                 <li class="nav-link">My List</li>
-                <li class="nav-link">Search</li>
-                <li class="nav-link">Notifications</li>
-                <li class="nav-link">Profile</li>
+                <li class="nav-link"><ion-icon name="search"></ion-icon></li>
+                <li class="nav-link"><ion-icon name="notifications"></ion-icon></li>
+                <li class="nav-link"><ion-icon name="arrow-dropdown"></ion-icon></li>
             </ul>
         </nav>
         <div class="banner" id="header-banner">
@@ -30,17 +33,18 @@
             <div class="banner-info">
                 <h3 class="duration">Duration: 51m</h3>
                 <ul>
-                    <li>star</li>
-                    <li>7.5</li>
-                    <li>season8</li>
-                    <li>episode 16</li>
-                    <li>still gotta mean something</li>
+                    <li><ion-icon name="star" style="color:rgb(255, 208, 0);"></ion-icon>7.5</li>
+                    <li>Season<span style="color:#b90000;font-weight:700;"> 8</span></li>
+                    <li class="bordered"></li>
+                    <li>Episode<span style="color:#b90000;font-weight:700;"> 16</span></li>
+                    <li class="bordered"></li>
+                    <li>Still Gotta Mean Something</li>
                 </ul>
                 <h1 class="movie-title">The Walking Dead</h1>
                 <p class="movie-info">A Heaps prisoner makes a discovery; Carol searches for someone in the nearby forest; Rick and Morgan find themselves in the company of strangers.</p>
                 <div class="banner-btns">
-                    <button class="banner-btn-1"><span class="material-icons-outlined">watch_later</span>WATCH</button>
-                    <button class="banner-btn-2"><span class="material-icons-outlined">add</span>ADD LIST</button>
+                    <button class="banner-btn-1"><ion-icon name="play"></ion-icon>WATCH</button>
+                    <button class="banner-btn-2"><ion-icon name="add"></ion-icon>ADD LIST</button>
                 </div>
             </div>
             
@@ -49,10 +53,10 @@
             <section class="content" id="content-1">
                 <nav class="nav-content">
                     <ul class="nav-content-links">
-                        <li class="nav-content-link">Trends Now</li>
-                        <li class="nav-content-link">Popular</li>
-                        <li class="nav-content-link">Premiere</li>
-                        <li class="nav-content-link">Recently Added</li>
+                        <li class="nav-content-link"><ion-icon name="trending-up"></ion-icon>Trends Now</li>
+                        <li class="nav-content-link"><ion-icon name="flame"></ion-icon>Popular</li>
+                        <li class="nav-content-link"><ion-icon name="star"></ion-icon>Premiere</li>
+                        <li class="nav-content-link"><ion-icon name="add"></ion-icon>Recently Added</li>
                     </ul>
                 </nav>
                 <nav class="movie-genres">
@@ -63,10 +67,10 @@
             <section class="content" id="content-2">
                 <nav class="nav-content">
                     <ul class="nav-content-links">
-                        <li class="nav-content-link">Movies</li>
-                        <li class="nav-content-link">Series</li>
-                        <li class="nav-content-link">Original Series</li>
-                        <li class="nav-content-link">Search<span class="material-icons-outlined">search</span></li>
+                        <li class="nav-content-link"><ion-icon name="easel"></ion-icon>Movies</li>
+                        <li class="nav-content-link"><ion-icon name="lock"></ion-icon>Series</li>
+                        <li class="nav-content-link"><ion-icon name="checkmark"></ion-icon>Original Series</li>
+                        <li class="nav-content-link"><ion-icon name="search"></ion-icon>Search</li>
                     </ul>
                     <div class="nav-other-options">
                         <span class="nav-sort">Sort by: 
@@ -122,6 +126,7 @@
         </main>
     </div>
     <script type="module" src="js/main.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 </body>
 </html>
 
