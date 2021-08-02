@@ -18,7 +18,7 @@ for (let i = 0; i <= Math.floor(moviesList.length / 2); i++) {
   const movieItemDiv = document.createElement("div");
   movieItemDiv.className = "movie-list-item";
   movieItemDiv.innerHTML = `
-        <img src="../assets/${moviesList[i].img}" alt="${moviesList[i].title}" class="movie-img"/>
+        <img src="assets/${moviesList[i].img}" alt="${moviesList[i].title}" class="movie-img"/>
         <div class="movie-info">
             <h3 class="movie-title">${moviesList[i].title}</h3>
             <div class="movie-rating">
