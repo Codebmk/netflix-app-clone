@@ -1,133 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Netflix</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
     <div id="wrapper">
-        <nav id="nav-bar">
-            <div id="nav-brand">
-                <h3 id="title">NETFLIX</h3>
-            </div>
-            <div id="nav-menu">
-                <div class="bar" id="bar1"></div>
-                <div class="bar" id="bar2"></div>
-                <div class="bar" id="bar3"></div>
-            </div>
-            <ul id="nav-links">
-                <li class="nav-link">Home</li>
-                <li class="nav-link">Movies</li>
-                <li class="nav-link">Series</li>
-                <li class="nav-link">My List</li>
-                <li class="nav-link"><ion-icon name="search"></ion-icon></li>
-                <li class="nav-link"><ion-icon name="notifications"></ion-icon></li>
-                <li class="nav-link"><ion-icon name="arrow-dropdown"></ion-icon></li>
-            </ul>
-        </nav>
-        <div class="banner" id="header-banner">
-            <img src="assets/images (22).jpeg" alt="Walking Dead Poster" />
-            <div class="banner-info">
-                <h3 class="duration">Duration: 51m</h3>
-                <ul>
-                    <li><ion-icon name="star" style="color:rgb(255, 208, 0);"></ion-icon>7.5</li>
-                    <li>Season<span style="color:#b90000;font-weight:700;"> 8</span></li>
-                    <li class="bordered"></li>
-                    <li>Episode<span style="color:#b90000;font-weight:700;"> 16</span></li>
-                    <li class="bordered"></li>
-                    <li>Still Gotta Mean Something</li>
-                </ul>
-                <h1 class="movie-title">The Walking Dead</h1>
-                <p class="movie-info">A Heaps prisoner makes a discovery; Carol searches for someone in the nearby forest; Rick and Morgan find themselves in the company of strangers.</p>
-                <div class="banner-btns">
-                    <button class="banner-btn-1"><ion-icon name="play"></ion-icon>WATCH</button>
-                    <button class="banner-btn-2"><ion-icon name="add"></ion-icon>ADD LIST</button>
-                </div>
-            </div>
-            
+      <nav id="nav-bar">
+        <div id="nav-brand">
+          <h3 id="title">NETFLIX</h3>
         </div>
-        <main id="main">
-            <section class="content" id="content-1">
-                <nav class="nav-content">
-                    <ul class="nav-content-links">
-                        <li class="nav-content-link"><ion-icon name="trending-up"></ion-icon>Trends Now</li>
-                        <li class="nav-content-link"><ion-icon name="flame"></ion-icon>Popular</li>
-                        <li class="nav-content-link"><ion-icon name="star"></ion-icon>Premiere</li>
-                        <li class="nav-content-link"><ion-icon name="add"></ion-icon>Recently Added</li>
-                    </ul>
-                </nav>
-                <nav class="movie-genres">
-                    <ul class="genres-list"></ul>
-                </nav>
-                <div class="movies-list movies-list-1"></div>
-            </section>
-            <section class="content" id="content-2">
-                <nav class="nav-content">
-                    <ul class="nav-content-links">
-                        <li class="nav-content-link"><ion-icon name="easel"></ion-icon>Movies</li>
-                        <li class="nav-content-link"><ion-icon name="lock"></ion-icon>Series</li>
-                        <li class="nav-content-link"><ion-icon name="checkmark"></ion-icon>Original Series</li>
-                        <li class="nav-content-link"><ion-icon name="search"></ion-icon>Search</li>
-                    </ul>
-                    <div class="nav-other-options">
-                        <span class="nav-sort">Sort by: 
-                            <select class="movie-sort-options">
-                                <option value="Latest" class="nav-sort-option">Latest</option>
-                                <option value="Trending" class="nav-sort-option">Trending</option>
-                                <option value="Watching" class="nav-sort-option">Watching</option>
-                            </select>
-                            <select class="movie-sort-options">
-                                <option value="" class="nav-sort-option">Year</option>
-                                <option value="2021" class="nav-sort-option">2021</option>
-                                <option value="2020" class="nav-sort-option">2020</option>
-                                <option value="2019" class="nav-sort-option">2019</option>
-                                <option value="other.." class="nav-sort-option">other..</option>
-                            </select>
-                            <select class="movie-sort-options">
-                                <option value="" class="nav-sort-option">A-Z</option>
-                                <option value="A" class="nav-sort-option">A</option>
-                                <option value="B" class="nav-sort-option">B</option>
-                                <option value="C" class="nav-sort-option">C</option>
-                                <option value="D" class="nav-sort-option">D</option>
-                                <option value="E" class="nav-sort-option">E</option>
-                                <option value="F" class="nav-sort-option">F</option>
-                                <option value="G" class="nav-sort-option">G</option>
-                                <option value="H" class="nav-sort-option">H</option>
-                                <option value="I" class="nav-sort-option">I</option>
-                                <option value="J" class="nav-sort-option">J</option>
-                                <option value="K" class="nav-sort-option">K</option>
-                                <option value="L" class="nav-sort-option">L</option>
-                                <option value="M" class="nav-sort-option">M</option>
-                                <option value="N" class="nav-sort-option">N</option>
-                                <option value="O" class="nav-sort-option">O</option>
-                                <option value="P" class="nav-sort-option">P</option>
-                                <option value="Q" class="nav-sort-option">Q</option>
-                                <option value="R" class="nav-sort-option">R</option>
-                                <option value="S" class="nav-sort-option">S</option>
-                                <option value="T" class="nav-sort-option">T</option>
-                                <option value="U" class="nav-sort-option">U</option>
-                                <option value="V" class="nav-sort-option">V</option>
-                                <option value="W" class="nav-sort-option">W</option>
-                                <option value="X" class="nav-sort-option">X</option>
-                                <option value="Y" class="nav-sort-option">Y</option>
-                                <option value="Z" class="nav-sort-option">Z</option>
-                            </select>
-                        </span>
-                    </div>
-                </nav>
-                <nav class="movie-genres">
-                    <ul class="genres-list"></ul>
-                </nav>
-                <div class="movies-list movies-list-2"></div>
-            </section>
-        </main>
+        <div id="nav-menu">
+          <div class="bar" id="bar1"></div>
+          <div class="bar" id="bar2"></div>
+          <div class="bar" id="bar3"></div>
+        </div>
+        <ul id="nav-links">
+          <li class="nav-link">Home</li>
+          <li class="nav-link">Movies</li>
+          <li class="nav-link">Series</li>
+          <li class="nav-link">My List</li>
+          <li class="nav-link"><ion-icon name="search"></ion-icon></li>
+          <li class="nav-link"><ion-icon name="notifications"></ion-icon></li>
+          <li class="nav-link"><ion-icon name="arrow-dropdown"></ion-icon></li>
+        </ul>
+      </nav>
+      <div class="banner" id="header-banner">
+        <img src="assets/images (22).jpeg" alt="Walking Dead Poster" />
+        <div class="banner-info">
+          <h3 class="duration">Duration: 51m</h3>
+          <ul>
+            <li>
+              <ion-icon name="star" class="star-icon"></ion-icon
+              >7.5
+            </li>
+            <li>
+              Season<span class="banner-character"> 8</span>
+            </li>
+            <li class="bordered"></li>
+            <li>
+              Episode<span class="banner-character"> 16</span>
+            </li>
+            <li class="bordered"></li>
+            <li>Still Gotta Mean Something</li>
+          </ul>
+          <h1 class="movie-title">The Walking Dead</h1>
+          <p class="movie-info">
+            A Heaps prisoner makes a discovery; Carol searches for someone in
+            the nearby forest; Rick and Morgan find themselves in the company of
+            strangers.
+          </p>
+          <div class="banner-btns">
+            <button class="banner-btn-1">
+              <ion-icon name="play"></ion-icon>WATCH
+            </button>
+            <button class="banner-btn-2">
+              <ion-icon name="add"></ion-icon>ADD LIST
+            </button>
+          </div>
+        </div>
+      </div>
+      <main id="main">
+        <section class="content" id="content-1">
+          <nav class="nav-content">
+            <ul class="nav-content-links">
+              <li class="nav-content-link active">
+                <ion-icon name="trending-up"></ion-icon>Trends Now
+              </li>
+              <li class="nav-content-link">
+                <ion-icon name="flame"></ion-icon>Popular
+              </li>
+              <li class="nav-content-link">
+                <ion-icon name="star"></ion-icon>Premiere
+              </li>
+              <li class="nav-content-link">
+                <ion-icon name="add"></ion-icon>Recently Added
+              </li>
+            </ul>
+          </nav>
+          <nav class="movie-genres">
+            <ul class="genres-list"></ul>
+          </nav>
+          <div class="movies-list movies-list-1"></div>
+        </section>
+        <section class="content" id="content-2">
+          <nav class="nav-content">
+            <ul class="nav-content-links">
+              <li class="nav-content-link active">
+                <ion-icon name="easel"></ion-icon>Movies
+              </li>
+              <li class="nav-content-link">
+                <ion-icon name="lock"></ion-icon>Series
+              </li>
+              <li class="nav-content-link">
+                <ion-icon name="checkmark"></ion-icon>Original Series
+              </li>
+              <li class="nav-content-link">
+                <ion-icon name="search"></ion-icon>Search
+              </li>
+            </ul>
+            <div class="nav-other-options">
+              <span class="nav-sort"
+                >Sort by:
+                <select class="movie-sort-options">
+                  <option value="Latest" class="nav-sort-option">Latest</option>
+                  <option value="Trending" class="nav-sort-option"
+                    >Trending</option
+                  >
+                  <option value="Watching" class="nav-sort-option"
+                    >Watching</option
+                  >
+                </select>
+                <select class="movie-sort-options">
+                  <option value="" class="nav-sort-option">Year</option>
+                  <option value="2021" class="nav-sort-option">2021</option>
+                  <option value="2020" class="nav-sort-option">2020</option>
+                  <option value="2019" class="nav-sort-option">2019</option>
+                  <option value="other.." class="nav-sort-option"
+                    >other..</option
+                  >
+                </select>
+                <select class="movie-sort-options">
+                  <option value="" class="nav-sort-option">A-Z</option>
+                  <option value="A" class="nav-sort-option">A</option>
+                  <option value="B" class="nav-sort-option">B</option>
+                  <option value="C" class="nav-sort-option">C</option>
+                  <option value="D" class="nav-sort-option">D</option>
+                  <option value="E" class="nav-sort-option">E</option>
+                  <option value="F" class="nav-sort-option">F</option>
+                  <option value="G" class="nav-sort-option">G</option>
+                  <option value="H" class="nav-sort-option">H</option>
+                  <option value="I" class="nav-sort-option">I</option>
+                  <option value="J" class="nav-sort-option">J</option>
+                  <option value="K" class="nav-sort-option">K</option>
+                  <option value="L" class="nav-sort-option">L</option>
+                  <option value="M" class="nav-sort-option">M</option>
+                  <option value="N" class="nav-sort-option">N</option>
+                  <option value="O" class="nav-sort-option">O</option>
+                  <option value="P" class="nav-sort-option">P</option>
+                  <option value="Q" class="nav-sort-option">Q</option>
+                  <option value="R" class="nav-sort-option">R</option>
+                  <option value="S" class="nav-sort-option">S</option>
+                  <option value="T" class="nav-sort-option">T</option>
+                  <option value="U" class="nav-sort-option">U</option>
+                  <option value="V" class="nav-sort-option">V</option>
+                  <option value="W" class="nav-sort-option">W</option>
+                  <option value="X" class="nav-sort-option">X</option>
+                  <option value="Y" class="nav-sort-option">Y</option>
+                  <option value="Z" class="nav-sort-option">Z</option>
+                </select>
+              </span>
+            </div>
+          </nav>
+          <nav class="movie-genres">
+            <ul class="genres-list"></ul>
+          </nav>
+          <div class="movies-list movies-list-2"></div>
+        </section>
+      </main>
     </div>
     <script type="module" src="js/main.js"></script>
-    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
-</body>
+    <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+  </body>
 </html>
 
 <!-- <div class="banner" id="movie-ad-banner">
@@ -147,7 +184,7 @@
             <button class="banner-btn-1">WATCH</button>
             <button class="banner-btn-2">ADD LIST</button>
         </div>
-        
+
     </div>
     <ul class="more-options">
         <li class="banner-more-details">GENERAL INFORMATION</li>
@@ -155,6 +192,6 @@
         <li class="banner-more-details">SIMILAR</li>
         <li class="banner-more-details">REVIEWS AND DETAILS</li>
         <li class="banner-more-details">LIKE</li>
-        <li class="banner-more-details">SEEN</li>   
+        <li class="banner-more-details">SEEN</li>
     </ul>
 </div> -->
